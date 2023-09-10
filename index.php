@@ -1,4 +1,7 @@
 <?php
+// including functions.php
+	require 'functions.php';
+// Array of group member information.
 $groupMembers = [
 	// Group Member 1: pam pepper
 	[
@@ -199,8 +202,8 @@ $groupMembers = [
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Your name's resume">
-	<meta name="author" content="Your name">
+	<meta name="description" content="Our Team's Index">
+	<meta name="author" content="Jacob Nelson, Eric Jackman, and Pam Pepper">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Google Font -->
