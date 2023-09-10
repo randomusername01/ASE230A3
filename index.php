@@ -1,6 +1,6 @@
 <?php
 // including functions.php
-	require 'functions.php';
+	//require 'functions.php';
 // Array of group member information.
 $groupMembers = [
 	// Group Member 1: pam pepper
@@ -111,84 +111,84 @@ $groupMembers = [
 	],
 
 // Group Member 3: Eric Jackman
-[
-	'personName' => 'Eric',
-	'wantedTitle' => 'Software Engineer',
-	'email' => 'jackmane1@nku.edu',
-	'phoneNumber' => '(859) 630 - 1249',
-	'github' => 'github.com/ericjjackman',
-	'linkedIn' => 'linkedin.com/in/eric-jackman-7b25a3260',
-	'website' => 'ericjjackman@gmail.com',
-	'summary' => 'I am a motivated computer science student looking to gain hands-on experience developing software. I am pursuing a bachelor\'s degree in computer science with a minor in data science. I have experience with mobile app development, including IOS, Android, and cross platform apps.',
-	'profilePicture' => 'eric_profile.jpg',
-	'languages' => ['English'],
-	'hobbies' => ['Esports/Gaming', 'Music Production', 'Weight Lifting'],
-	'jobHistory' => [
-		[
-			'jobTitle' => 'Mobile Software Engineering Intern',
-			'jobCompany' => 'Divisions Maintenance Group',
-			'jobStart' => 'May 2023',
-			'jobEnd' => 'August 2023',
-			'jobSummary' => 'I worked on the mobile development team for the DMG Pro mobile app. I gained experience writing cross platform apps using React Native, Typescript, and Redux. Additionally, I gained experience writing native mobile apps using both Kotlin and Swift.',
-			'jobAchievements' => 'I singlehandedly designed and started development on the DMG Pro App Clip, which is build to be lightweight, have a simple UI, and increase downloads for the full app',
-			'jobTechUsed' => ['React', 'React Native', 'Swift', 'Kotlin', 'Typescript', 'Redux'],
+	[
+		'personName' => 'Eric',
+		'wantedTitle' => 'Software Engineer',
+		'email' => 'jackmane1@nku.edu',
+		'phoneNumber' => '(859) 630 - 1249',
+		'github' => 'github.com/ericjjackman',
+		'linkedIn' => 'linkedin.com/in/eric-jackman-7b25a3260',
+		'website' => 'ericjjackman@gmail.com',
+		'summary' => 'I am a motivated computer science student looking to gain hands-on experience developing software. I am pursuing a bachelor\'s degree in computer science with a minor in data science. I have experience with mobile app development, including IOS, Android, and cross platform apps.',
+		'profilePicture' => 'eric_profile.jpg',
+		'languages' => ['English'],
+		'hobbies' => ['Esports/Gaming', 'Music Production', 'Weight Lifting'],
+		'jobHistory' => [
+			[
+				'jobTitle' => 'Mobile Software Engineering Intern',
+				'jobCompany' => 'Divisions Maintenance Group',
+				'jobStart' => 'May 2023',
+				'jobEnd' => 'August 2023',
+				'jobSummary' => 'I worked on the mobile development team for the DMG Pro mobile app. I gained experience writing cross platform apps using React Native, Typescript, and Redux. Additionally, I gained experience writing native mobile apps using both Kotlin and Swift.',
+				'jobAchievements' => 'I singlehandedly designed and started development on the DMG Pro App Clip, which is build to be lightweight, have a simple UI, and increase downloads for the full app',
+				'jobTechUsed' => ['React', 'React Native', 'Swift', 'Kotlin', 'Typescript', 'Redux'],
+			],
+			[
+				'jobTitle' => 'Student Researcher',
+				'jobCompany' => 'Northern Kentucky University',
+				'jobStart' => 'January 2021',
+				'jobEnd' => 'May 2021',
+				'jobSummary' => 'I collaborated with students and professors on the Know Rivalry Project. I worked to design the Neo4j database, and worked to move the data there from an excel sheet. I grained experience writing Python scripts and wokring with no-SQL databases.',
+				'jobAchievements' => 'Cleaned over 10,000 survey responses using Python and helped to improve the design of the database in Neo4j.',
+				'jobTechUsed' => ['Python', 'MySQL', 'Neo4j'],
+			],
 		],
-		[
-			'jobTitle' => 'Student Researcher',
-			'jobCompany' => 'Northern Kentucky University',
-			'jobStart' => 'January 2021',
-			'jobEnd' => 'May 2021',
-			'jobSummary' => 'I collaborated with students and professors on the Know Rivalry Project. I worked to design the Neo4j database, and worked to move the data there from an excel sheet. I grained experience writing Python scripts and wokring with no-SQL databases.',
-			'jobAchievements' => 'Cleaned over 10,000 survey responses using Python and helped to improve the design of the database in Neo4j.',
-			'jobTechUsed' => ['Python', 'MySQL', 'Neo4j'],
+		'educationHistory' => [
+			[
+				'degree' => 'Computer Science',
+				'school' => 'Northern Kentucky University',
+				'graduationDate' => 'December 2023'
+			],
 		],
-	],
-	'educationHistory' => [
-		[
-			'degree' => 'Computer Science',
-			'school' => 'Northern Kentucky University',
-			'graduationDate' => 'December 2023'
+		'myProjects' => [
+			[
+				'projectName' => 'Hospital Admin App',
+				'projectDescription' => 'Created a demo of a console-based hospital administration app using C++.',
+				'projectLink' => 'https://github.com/ericjackman/Hospital-Administration-Console-App',
+				'projectImage' => 'eric_project1.png',
+			],
+			[
+				'projectName' => 'Fidelity Data Visualization',
+				'projectDescription' => 'Used Python to mine data and create a web app to visualize the conclusions.',
+				'projectLink' => '',
+				'projectImage' => 'eric_project2.jpg',
+			],
 		],
-	],
-	'myProjects' => [
-		[
-			'projectName' => 'Hospital Admin App',
-			'projectDescription' => 'Created a demo of a console-based hospital administration app using C++.',
-			'projectLink' => 'https://github.com/ericjackman/Hospital-Administration-Console-App',
-			'projectImage' => 'eric_project1.png',
+		'skills' => [
+			'React',
+			'Typescript',
+			'Python',
+			'Swift',
+			'Kotlin',
 		],
-		[
-			'projectName' => 'Fidelity Data Visualization',
-			'projectDescription' => 'Used Python to mine data and create a web app to visualize the conclusions.',
-			'projectLink' => '',
-			'projectImage' => 'eric_project2.jpg',
+		'others' => [
+			'Git',
+			'Unit Testing',
+			'Leadership',
+			'Teamwork',
+			'Problem Solving',
 		],
-	],
-	'skills' => [
-		'React',
-		'Typescript',
-		'Python',
-		'Swift',
-		'Kotlin',
-	],
-	'others' => [
-		'Git',
-		'Unit Testing',
-		'Leadership',
-		'Teamwork',
-		'Problem Solving',
-	],
-	'awards' => [
-		[
-			'awardName' => 'Deans\' List',
-			'awardDescription' => 'Achieved a GPA of 3.5+ in every semester.',
+		'awards' => [
+			[
+				'awardName' => 'Deans\' List',
+				'awardDescription' => 'Achieved a GPA of 3.5+ in every semester.',
+			],
+			[
+				'awardName' => 'Captain of Esports Team',
+				'awardDescription' => 'Given leadership role in NKU\'s varsity esports program.',
+			],
 		],
-		[
-			'awardName' => 'Captain of Esports Team',
-			'awardDescription' => 'Given leadership role in NKU\'s varsity esports program.',
-		],
-	],
-],
+	]
 ];
 ?>
 
@@ -202,7 +202,7 @@ $groupMembers = [
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Our Team's Index">
+	<meta name="description" content="Index of team members' resume profiles.">
 	<meta name="author" content="Jacob Nelson, Eric Jackman, and Pam Pepper">
 	<link rel="shortcut icon" href="favicon.ico">
 
