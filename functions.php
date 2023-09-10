@@ -19,11 +19,11 @@ function displayMember($groupMembers,$index){
 					<div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
 						<!-- You may want to use the profilePicture from the member data -->
 						<br>
-						<img class="picture" src="assets/images/ '.$member['profilePicture'].' " alt="'.$member['personName'].' " width="200\" height=\"200\">
+						<img class="picture" src="assets/images/'.$member['profilePicture'].' " alt="'.$member['personName'].' " width="200" height="200">
 					</div><!--//col-->
 					<div class="col">
 						<div class="row p-4 justify-content-center justify-content-md-between">
-							<div class=\"primary-info col-auto\">
+							<div class="primary-info col-auto">
 								<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">
 									'.$member['personName'].' 
 								</h1>
