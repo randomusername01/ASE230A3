@@ -1,4 +1,6 @@
 <?php
+require 'functions.php';
+
 $groupMembers = [
 	// Group Member 1: pam pepper
 	[
@@ -270,27 +272,7 @@ $data = $groupMembers[$index];
 							    <div class="resume-timeline position-relative">
 									<?php
 										for ($i = 0; $i < count($data['jobHistory']); $i++) {
-											echo '<article class="resume-timeline-item position-relative pb-5">
-												<div class="resume-timeline-item-header mb-2">
-													<div class="d-flex flex-column flex-md-row">
-														<h3 class="resume-position-title font-weight-bold mb-1">'.$data['jobHistory'][$i]['jobTitle'].'</h3>
-														<div class="resume-company-name ms-auto">'.$data['jobHistory'][$i]['jobCompany'].'</div>
-													</div><!--//row-->
-													<div class="resume-position-time">'.$data['jobHistory'][$i]['jobStart'].' - '.$data['jobHistory'][$i]['jobEnd'].'</div>
-												</div><!--//resume-timeline-item-header-->
-												<div class="resume-timeline-item-desc">
-													<p>'.$data['jobHistory'][$i]['jobSummary'].'</p>
-													<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
-													<p>'.$data['jobHistory'][$i]['jobAchievements'].'</p>
-													<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-													<ul class="list-inline">';
-														for ($j = 0; $j < count($data['jobHistory'][$i]['jobTechUsed']); $j++) {
-															echo '<li class="list-inline-item"><span class="badge bg-secondary badge-pill">'.$data['jobHistory'][$i]['jobTechUsed'][$j].'</span></li>';
-														}
-											echo	'</ul>
-												</div><!--//resume-timeline-item-desc-->
-
-											</article><!--//resume-timeline-item-->';
+											displayWorkExperience($data['jobHistory'][$i]);
 										}
 									?>
 							    </div><!--//resume-timeline-->

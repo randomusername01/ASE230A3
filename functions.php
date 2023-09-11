@@ -43,3 +43,27 @@ function displayMember($groupMembers,$index){
 		</header>'
 	;
 }
+
+// Displays work experience card on the detail page
+function displayWorkExperience($workEXP) {
+	echo '<article class="resume-timeline-item position-relative pb-5">
+		<div class="resume-timeline-item-header mb-2">
+			<div class="d-flex flex-column flex-md-row">
+				<h3 class="resume-position-title font-weight-bold mb-1">'.$workEXP['jobTitle'].'</h3>
+				<div class="resume-company-name ms-auto">'.$workEXP['jobCompany'].'</div>
+			</div><!--//row-->
+			<div class="resume-position-time">'.$workEXP['jobStart'].' - '.$workEXP['jobEnd'].'</div>
+		</div><!--//resume-timeline-item-header-->
+		<div class="resume-timeline-item-desc">
+			<p>'.$workEXP['jobSummary'].'</p>
+			<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
+			<p>'.$workEXP['jobAchievements'].'</p>
+			<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+			<ul class="list-inline">';
+	for ($i = 0; $i < count($workEXP['jobTechUsed']); $i++) {
+		echo '<li class="list-inline-item"><span class="badge bg-secondary badge-pill">'.$workEXP['jobTechUsed'][$i].'</span></li>';
+	}
+	echo '</ul>
+		</div><!--//resume-timeline-item-desc-->
+		</article><!--//resume-timeline-item-->';
+}
